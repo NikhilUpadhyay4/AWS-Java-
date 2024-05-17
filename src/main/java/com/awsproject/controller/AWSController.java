@@ -18,10 +18,7 @@ import java.util.UUID;
 @RequestMapping("/api/aws")
 public class AWSController {
 
-    @GetMapping("/hello")
-    public String getHello(){
-        return "Working";
-    }
+   
     @Autowired
     private AWSService awsDiscoveryService;
 
@@ -102,7 +99,7 @@ public class AWSController {
      * @param pattern the pattern to match the object names.
      * @return a list of matching object names.
      */
-    @GetMapping("/getS3BucketObjectLike/{bucketName}/{pattern}")
+    @GetMapping("/file/{bucketName}/{pattern}")
     public List<String> getS3BucketObjectLike(@PathVariable String bucketName, @PathVariable String pattern) {
         return awsDiscoveryService.getS3BucketObjectLike(bucketName, pattern);
     }
