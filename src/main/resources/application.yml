@@ -1,0 +1,22 @@
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://admin:admin@cluster0.do1u4io.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      database: "aws-resource"
+  servlet:
+    multipart:
+      max-file-size: "20000MB"
+      max-request-size: "20000MB"
+    enabled: true
+
+cloud:
+  aws:
+    credentials:
+      access-key: # NOTE : ADD Access Key
+      secret-key: # NOTE : ADD Secret Key
+    stack:
+      auto: false
+
+
+server:
+  port: 8082
