@@ -23,7 +23,7 @@ This Spring Boot project demonstrates how to integrate with AWS services (EC2 an
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/aws-spring-boot-integration.git
+    git clone https://github.com/NikhilUpadhyay4/AWS-Java-.git
     ```
 
 2. **Set AWS Credentials**:
