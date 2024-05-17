@@ -70,33 +70,33 @@ You can interact with the REST APIs provided by the application to discover and 
 - **Get Job Result**:
 
     ```http
-    GET /api/aws/getJobResult/{jobId}
+    GET /api/aws/jobId/{jobId}
     ```
 
 - **Get Discovery Result**:
 
     ```http
-    GET /api/aws/getDiscoveryResult/{service}
+    GET /api/aws/service/{service}
     ```
 
-    Example: `/api/aws/getDiscoveryResult/EC2`
+    Example: `/api/aws/service/EC2`
 
 - **Get S3 Bucket Objects**:
 
     ```http
-    POST /api/aws/getS3BucketObjects?bucketName={bucketName}
+    POST /api/aws/bucket?bucketName={bucketName}
     ```
 
 - **Get S3 Bucket Object Count**:
 
     ```http
-    GET /api/aws/getS3BucketObjectCount/{bucketName}
+    GET /api/aws/bucket/{bucketName}
     ```
 
 - **Get S3 Bucket Object Like**:
 
     ```http
-    GET /api/aws/getS3BucketObjectLike/{bucketName}/{pattern}
+    GET /api/aws/file/{bucketName}/{pattern}
     ```
 
 ## Contributing
